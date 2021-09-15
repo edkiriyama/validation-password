@@ -34,7 +34,8 @@ IsValid("AbTp9!fok") // true
 Clonar o projeto:
 
 ```bash
-git clone https://github.com/eduardo-felipe/validation-password.git
+git clone
+https://github.com/edkiriyama/validation-password.git
 ```
 Entrar no diretório do projeto:
 
