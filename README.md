@@ -39,37 +39,20 @@ https://github.com/edkiriyama/validation-password.git
 Entrar no diretório do projeto:
 
 ```bash
-cd /validation-password
-```
 
-Executar o comando Maven, conforme abaixo:
-```bash
-mvn clean install
 ```
 
 Executar o JAR do Projeto:
 ```bash
-java -jar target\validation-password-0.0.1-SNAPSHOT.jar
+java -jar target\password-0.0.1-SNAPSHOT.jar
 ```
-## Execução do Projeto (Docker)
-```bash
-docker run -p 8080:8080 eduardofal1987/validation-password:v1.0
-```
+
 ## Detalhes da Solução
 
-1. Escolhi utilizar a linguagem de programação Java, usando o Spring como Framework para facilitar a criação da API Web usando o padrão MVC. 
-
-2. Também foi utilizado o projeto Lombok para facilitar e diminuir a quantidade e complexidade do código (exemplo gerar Getters e Setters e construtores).
-
-3. Foi utilizado o JUNIT para testes unitários, pois é um dos frameworks de testes mais utilizados para a linguagem.
-
-4. Foi utilizado a especificação OpenApi/Swagger para documentação da API.
-
-5. Em relação ao Design da API, considerei o uso do verbo POST, pois ele é o mais recomendado quando tratamos de dados sensíveis como uma senha. Ele acaba sendo um pouco mais seguro, pois o dado não fica visível na URL e nem fica armazenado em histórico de navegadores, pois o mesmo é trafegado através de do body da requisição.
-
-6. A solução foi baseada em um serviço de Validação de Senha, porém todos as validações foram realizadas em métodos separados para segmentar as responsabilidades, fazendo com que cada método tivesse somente 1 objetivo.
-
-7. Foram criadas exceções especificas para cada validação, afim de melhorar a visibilidade entre o que é uma regra de negócio e uma exceção da aplicação.
+1. Foi utilizado a linguagem de programação Java. 
+2. Para criação da API Web foi utilizado o SPRING como Framework padrão MVC que facilita a criação da API.
+3. Para os teste unitários, foi utilizado o JUnit, pois estes frameworks são os mais utilizados para execussão dos testes nesta linguagem.
+4. A solução foi baseada em um serviço de Validação de Senha, porém todos as validações foram realizadas em métodos separados para segmentar as responsabilidades, fazendo com que cada método tivesse somente 1 objetivo.
 
 ## Premissas
 
