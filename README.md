@@ -25,13 +25,11 @@ IsValid("AbTp9 fok") // false
 IsValid("AbTp9!fok") // true
 ```
 ## Pré-requisitos
-1. É necessário ter instalado o Java na versão 11 [Java SE Development Kit 11 Downloads](https://www.oracle.com/br/java/technologies/javase-jdk11-downloads.html), escolhendo o Sistema Operacional que será usado na execução.
+1. É necessário ter instalado o Java na versão 11 [Java SE Development Kit 11 Downloads](https://www.oracle.com/br/java/technologies/javase-jdk11-downloads.html). Ao entrar no link, é necessário escolher o Sistema Operacional que será instalado para a execussão.
 
 2. É necessário ter instalado o Maven (de preferência na versão mais recente). [Maven](https://maven.apache.org/download.cgi)
 
-3. Para execução via Docker, é necessário ter instalado o Docker (de preferência na versão mais recente). [Docker](https://www.docker.com/)
-
-## Execução do Projeto (Manual)
+## Execução do Projeto
 
 Clonar o projeto:
 
@@ -75,8 +73,4 @@ docker run -p 8080:8080 eduardofal1987/validation-password:v1.0
 
 ## Premissas
 
-1. Foi incluído uma mensagem de retorno no response para informar qual o motivo da senha não ser valida.
 
-2. Foi incluído uma package de testes integrados no próprio repositório.
-
-3. Foi criado uma imagem docker para facilitar a preparação do ambiente do projeto.
