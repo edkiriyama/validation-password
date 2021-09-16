@@ -4,7 +4,7 @@ public class PasswordResponse {
     private boolean isValid;
 
     public PasswordResponse(boolean isValid) {
-        isValid = isValid;
+        this.isValid = isValid;
     }
 
     public boolean isValid() {
