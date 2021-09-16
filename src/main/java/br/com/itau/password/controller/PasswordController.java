@@ -8,17 +8,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 
 @RestController
 public class PasswordController {
     @Autowired
     private PasswordService passwordService;
 
-    @GetMapping ("/validate-password")
-    public PasswordResponse validatePassword(@RequestBody PasswordRequest passwordRequest){
+    @GetMapping("/validate-password")
+    public PasswordResponse validatePassword(@RequestBody PasswordRequest passwordRequest) {
         return new PasswordResponse(passwordService.validate(passwordRequest.getPassword()));
     }
 }
