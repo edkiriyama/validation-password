@@ -47,6 +47,15 @@ Executar o JAR do Projeto:
 ./mvnw spring-boot:run
 ```
 
+Para testar, execute o código a baixo.
+```bash
+curl --location --request GET 'http://localhost:8080/validate-password' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "password": "Degard1234!"
+}'
+```
+
 ## Detalhes da Solução
 
 1. Foi utilizado a linguagem de programação Java. 
