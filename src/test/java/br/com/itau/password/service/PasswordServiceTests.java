@@ -24,6 +24,5 @@ public class PasswordServiceTests {
         assertFalse(passwordService.validate("AbTp9!foo"));
         assertFalse(passwordService.validate("AbTp9!foA"));
         assertFalse(passwordService.validate("AbTp9 fok"));
-
     }
 }
