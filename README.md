@@ -34,12 +34,12 @@ IsValid("AbTp9!fok") // true
 Clonar o projeto:
 
 ```bash
-gh repo clone edkiriyama/validation-password
+git clone https://github.com/edkiriyama/validation-password.git
 ```
 Entrar no diretório do projeto:
 
 ```bash
-
+./mvnw spring-boot:run
 ```
 
 Executar o JAR do Projeto:
