@@ -10,7 +10,7 @@ public class PasswordService {
 
     private static final String password_regex = "^(?=.*[A-Z])(?!.*(.).*\\1)(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%ˆ&*()-+]).{9,}$";
 
-    public boolean validate(final String password) {
+    public boolean validate(String password) {
         Pattern pattern = Pattern.compile(password_regex);
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
