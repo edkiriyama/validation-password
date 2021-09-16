@@ -39,7 +39,7 @@ git clone https://github.com/edkiriyama/validation-password.git
 Entrar no diretório do projeto:
 
 ```bash
-cd validation-passworld
+cd validation-password
 ```
 
 Executar o JAR do Projeto:
