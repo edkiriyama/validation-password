@@ -34,26 +34,31 @@ IsValid("AbTp9!fok") // true
 Clonar o projeto:
 
 ```bash
-gh repo clone edkiriyama/validation-password
+git clone https://github.com/edkiriyama/validation-password.git
 ```
 Entrar no diretório do projeto:
 
 ```bash
-
+cd validation-password
 ```
 
 Executar o JAR do Projeto:
 ```bash
-java -jar target\password-0.0.1-SNAPSHOT.jar
+./mvnw spring-boot:run
+```
+
+Para testar, execute o código a baixo.
+```bash
+curl --location --request GET 'http://localhost:8080/validate-password' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "password": "Degard1234!"
+}'
 ```
 
 ## Detalhes da Solução
 
 1. Foi utilizado a linguagem de programação Java. 
-2. Para criação da API Web foi utilizado o SPRING como Framework padrão MVC que facilita a criação da API.
-3. Para os teste unitários, foi utilizado o JUnit, pois estes frameworks são os mais utilizados para execussão dos testes nesta linguagem.
+2. Para criação da API Web foi utilizado o SPRING Boot como Framework padrão MVC que facilita a criação da API.
+3. Para os teste unitários, foi utilizado o JUnit, pois estes frameworks são os mais utilizados para execução dos testes nesta linguagem.
 4. A solução foi baseada em um serviço de Validação de Senha, porém todos as validações foram realizadas em métodos separados para segmentar as responsabilidades, fazendo com que cada método tivesse somente 1 objetivo.
-
-## Premissas
-
-
