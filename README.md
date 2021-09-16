@@ -39,12 +39,12 @@ git clone https://github.com/edkiriyama/validation-password.git
 Entrar no diretório do projeto:
 
 ```bash
-./mvnw spring-boot:run
+cd validation-passworld
 ```
 
 Executar o JAR do Projeto:
 ```bash
-java -jar target\password-0.0.1-SNAPSHOT.jar
+./mvnw spring-boot:run
 ```
 
 ## Detalhes da Solução
