@@ -61,4 +61,4 @@ curl --location --request GET 'http://localhost:8080/validate-password' \
 1. Foi utilizado a linguagem de programação Java. 
 2. Para criação da API Web foi utilizado o SPRING Boot como Framework padrão MVC que facilita a criação da API.
 3. Para os teste unitários, foi utilizado o JUnit, pois estes frameworks são os mais utilizados para execução dos testes nesta linguagem.
-4. A solução foi baseada em um serviço de Validação de Senha, porém todos as validações foram realizadas em uma expressão regular para especificar um padrão de validação, fazendo com que o método tivesse somente 1 objetivo.
+4. A solução foi baseada em um serviço de Validação de Senha, porém todos as validações foram realizadas em expressão regular para especificar um padrão de validação, fazendo com que o método tivesse somente 1 objetivo.
